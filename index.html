@@ -6,20 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To do App</title>
-    <!--Import Google Icon Font-->
-    <!-- <link href="css/Material-Icons.css" rel="stylesheet"> -->
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <!-- fa pro -->
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <!-- fa -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="custom.css">
+     <!-- fav icon -->
+     <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="../favicon//apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="../favicon//apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="../favicon//apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="../favicon//apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="../favicon//apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="../favicon//apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="../favicon//apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="../favicon//apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192" href="../favicon//android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../favicon//favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="../favicon//favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../favicon//favicon-16x16.png">
+     <link rel="manifest" href="../favicon/manifest.json">
+     <!-- meta -->
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="../favicon//ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">
+         <!-- sticky Footer -->
+    <link rel="stylesheet" href="../css/stickyFooter.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="../css/fonts.css">
 </head>
 
 <body>
+    <header class="bg-navyblue">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="center"> <i class="fad fa-list" aria-hidden="true"></i> To do task list App  </h4>
+                </div>
+            </div>
+        </div>
+
+    </header>
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h4><i class="fad fa-list" aria-hidden="true"></i> To do task list App </h4>
+                
                 <div id="main" class="card">
                     <div class="card-content">
                         <span class="card-title lead">Task</span>
@@ -30,9 +62,7 @@
                                     <label for="task">Write a new task</label>
                                 </div>
  
-                                    <button type="submit" class="btn black" id="actionBtn1">Add New Task 
-                                        <i class="fal fa-plus fa__icon"></i>
-                                    </button>
+                                    <button type="submit" class="btn bg-navyblue" id="actionBtn1">Add New Task </button>
  
                                 <span class="inline input-field red-text" id="emptyInput"></span>
                             </form>
@@ -52,9 +82,8 @@
                             <!-- list items will load here -->
                         </ul>
 
-                        <a href="#" class="clear-tasks btn red darken-4" id="actionBtn2"> 
-                            Clear all tasks <i class="fal fa-times fa__icon"></i>
-                        </a>
+                         
+                        <button class="clear-tasks btn red darken-4" id="actionBtn2">Clear all tasks</button>
 
                         <span class="inline input-field red-text" id="taskListDelErr"></span>
 
@@ -66,27 +95,21 @@
     </div>
 </body>
 
-  <!-- Footer -->
-  <footer class="footer font-small">
+ <!-- Footer starts-->
+<footer class="footer bg-navyblue">
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center">&copy; Developed with ❤ by
-        <a href="https://grohit.com/">G Rohit</a>
+    <!-- ❤️  -->
+    <div class="footer-copyright text-center">&copy; Developed with <i class="fas fa-heart" aria-hidden="true"></i> by
+        <a href="https://grohit.com/" class="white-text">G Rohit</a>
     </div>
     <!-- Copyright -->
 
 </footer>
-<!-- Footer -->
-
-
-<!-- <script src="js/fa.js" crossorigin="anonymous"></script> -->
-
-<!-- jquery for any -->
-<!-- <script src="js/jquery-3.4.1.js"></script> -->
+<!-- Footer ends-->
 
 <!-- Compiled and minified JavaScript -->
-<script src="js/materialize.min.js"></script>
-
-<script src="js/app.js"></script>
+<script src="../js/materialize.min.js"></script>
+<script src="app.min.js"></script>
 
 </html>

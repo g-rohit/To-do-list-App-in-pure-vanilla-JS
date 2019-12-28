@@ -31,16 +31,16 @@ document.addEventListener('DOMContentLoaded', loadTasks);
   filter.addEventListener("keyup", filterTasks);
 
   // show icon on hover - actionBtn1
-  actionBtn1.addEventListener("mouseover", showFAIcon);
+  // actionBtn1.addEventListener("mouseover", showFAIcon);
 
   // hide icon on mouse out - actionBtn1
-  actionBtn1.addEventListener("mouseout", hideFAIcon);
+  // actionBtn1.addEventListener("mouseout", hideFAIcon);
 
   // show icon on hover - actionBtn2
-  actionBtn2.addEventListener("mouseover", showFAIcon);
+  // actionBtn2.addEventListener("mouseover", showFAIcon);
 
   // hide icon on mouse out - actionBtn2
-  actionBtn2.addEventListener("mouseout", hideFAIcon);
+  // actionBtn2.addEventListener("mouseout", hideFAIcon);
 }
 
 // Load tasks from Local storage
@@ -82,7 +82,7 @@ function loadTasks() {
     //append the link to li
     li.appendChild(link);
 
-    console.log(li);
+    // console.log(li);
 
     //appending link to the UL
     taskList.appendChild(li);
@@ -261,26 +261,26 @@ function filterTasks(e) {
 }
 
 // show fa icon
-function showFAIcon(e) {
-  // console.log(`show icon`);
-  //  console.log(e.target);
+// function showFAIcon(e) {
+//   // console.log(`show icon`);
+//   //  console.log(e.target);
 
-  if (e.target.childNodes.length != 0) {
-    if (e.target.childNodes[1].className.includes("fa__icon")) {
-      e.target.childNodes[1].style.cssText = "display: inline;";
-    }
-  }
-}
+//   if (e.target.childNodes.length != 0) {
+//     if (e.target.childNodes[1].className.includes("fa__icon")) {
+//       e.target.childNodes[1].style.cssText = "display: inline;";
+//     }
+//   }
+// }
 
-// show fa icon
-function hideFAIcon(e) {
-  // console.log(`hide icon`);
-  //     console.log(e.target);
-  // console.log(e.type);
+// // show fa icon
+// function hideFAIcon(e) {
+//   // console.log(`hide icon`);
+//   //     console.log(e.target);
+//   // console.log(e.type);
 
-  if (e.target.childNodes.length != 0) {
-    if (e.target.childNodes[1].className.includes("fa__icon")) {
-      e.target.childNodes[1].style.cssText = "display: none;";
-    }
-  }
-}
+//   if (e.target.childNodes.length != 0) {
+//     if (e.target.childNodes[1].className.includes("fa__icon")) {
+//       e.target.childNodes[1].style.cssText = "display: none;";
+//     }
+//   }
+// }

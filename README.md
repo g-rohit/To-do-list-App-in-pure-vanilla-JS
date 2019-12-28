@@ -2,4 +2,4 @@
 
 ### A simple to do list app, created using vanilla JS, used Materialize CSS for UI
 
-Visit Now: [https://grohit.com/loancalculator/](https://grohit.com/loancalculator/)
+Visit Now: [https://grohit.com/todoapp/](https://grohit.com/todoapp/)
